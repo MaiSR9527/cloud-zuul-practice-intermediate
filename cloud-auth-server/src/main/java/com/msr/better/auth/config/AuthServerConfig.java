@@ -29,7 +29,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
                 .inMemory()
                 .withClient("zuul-server")
                 .secret("my-secret")
-                .scopes("WRIGTH", "read").autoApprove(true)
+                .scopes("write", "read").autoApprove(true)
                 .authorities("WRIGTH_READ", "WRIGTH_WRITE")
                 .authorizedGrantTypes("implicit", "refresh_token", "password", "authorization_code");
     }
