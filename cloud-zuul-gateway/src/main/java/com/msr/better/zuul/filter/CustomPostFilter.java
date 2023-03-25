@@ -3,6 +3,8 @@ package com.msr.better.zuul.filter;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.POST_TYPE;
 
@@ -12,6 +14,9 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
  * @since 2021-05-16 16:15
  **/
 public class CustomPostFilter extends ZuulFilter {
+
+    private static final Logger LOG = LoggerFactory.getLogger(CustomPostFilter.class);
+
     @Override
     public String filterType() {
         return POST_TYPE;

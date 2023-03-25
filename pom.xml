@@ -12,7 +12,7 @@
     <modules>
         <module>cloud-eureka-server</module>
         <module>cloud-service-a</module>
-        <module>cloud-zuul-server</module>
+        <module>cloud-zuul-gateway</module>
         <module>cloud-auth-server</module>
     </modules>
 

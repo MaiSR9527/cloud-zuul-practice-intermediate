@@ -1,6 +1,7 @@
 package com.msr.better.zuul.config;
 
 import com.msr.better.zuul.filter.CustomPostFilter;
+import com.msr.better.zuul.filter.CustomPreFilter;
 import com.msr.better.zuul.filter.FirstPreFilter;
 import com.msr.better.zuul.filter.SecondPreFilter;
 import org.springframework.context.annotation.Bean;
@@ -27,5 +28,10 @@ public class ZuulFilterConfig {
     @Bean
     public CustomPostFilter customPostFilter() {
         return new CustomPostFilter();
+    }
+
+    @Bean
+    public CustomPreFilter customPreFilter() {
+        return new CustomPreFilter();
     }
 }

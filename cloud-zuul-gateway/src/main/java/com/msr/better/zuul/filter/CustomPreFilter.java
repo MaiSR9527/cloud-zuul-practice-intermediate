@@ -2,6 +2,8 @@ package com.msr.better.zuul.filter;
 
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.exception.ZuulException;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author MaiShuRen
@@ -9,6 +11,9 @@ import com.netflix.zuul.exception.ZuulException;
  * @since 2022-01-18 23:15
  **/
 public class CustomPreFilter extends ZuulFilter {
+
+    private static final Logger LOG = LoggerFactory.getLogger(CustomPreFilter.class);
+
     @Override
     public String filterType() {
         return "pre";
@@ -26,7 +31,7 @@ public class CustomPreFilter extends ZuulFilter {
 
     @Override
     public Object run() throws ZuulException {
-        System.out.println("This is custom pre filter...");
+        LOG.info("This is custom pre filter...");
         return null;
     }
 }
