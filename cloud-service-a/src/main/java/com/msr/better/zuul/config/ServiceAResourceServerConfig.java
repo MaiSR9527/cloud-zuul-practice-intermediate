@@ -16,7 +16,7 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
  * @since 2023-04-02 18:29
  **/
 @Configuration
-public class ClientAResourceServerConfig extends ResourceServerConfigurerAdapter {
+public class ServiceAResourceServerConfig extends ResourceServerConfigurerAdapter {
 
     @Override
     public void configure(HttpSecurity http) throws Exception {
