@@ -17,9 +17,9 @@ zuul:
 security:
   oauth2:
     client:
-      access-token-uri: http://localhost:7777/uaa/oauth/token #令牌端点
-      user-authorization-uri: http://localhost:7777/uaa/oauth/authorize #授权端点
-      client-id: zuul-server #OAuth2客户端ID
+      access-token-uri: http://localhost:7788/uaa/oauth/token #令牌端点
+      user-authorization-uri: http://localhost:7788/uaa/oauth/authorize #授权端点
+      client-id: zuul-gateway #OAuth2客户端ID
       client-secret: my-secret #OAuth2客户端密钥
     resource:
       jwt:

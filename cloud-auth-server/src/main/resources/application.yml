@@ -2,7 +2,7 @@ spring:
   application:
     name: cloud-auth-server
 server:
-  port: 7777
+  port: 7788
   servlet:
     contextPath: /uaa
 eureka:

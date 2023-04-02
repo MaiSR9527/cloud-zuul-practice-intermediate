@@ -27,7 +27,7 @@ public class AuthServerConfig extends AuthorizationServerConfigurerAdapter {
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients
                 .inMemory()
-                .withClient("zuul-server")
+                .withClient("zuul-gateway")
                 .secret("my-secret")
                 .scopes("write", "read").autoApprove(true)
                 .authorities("WRIGTH_READ", "WRIGTH_WRITE")
