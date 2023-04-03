@@ -24,3 +24,5 @@ security:
     resource:
       jwt:
         key-value: hahaha #使用对称加密方式，默认算法为HS256
+  basic:
+    enabled: false

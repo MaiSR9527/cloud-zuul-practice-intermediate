@@ -24,7 +24,7 @@ public class ServiceAResourceServerConfig extends ResourceServerConfigurerAdapte
                 .disable()
                 .authorizeRequests()
                 .antMatchers("/**").authenticated()
-                .antMatchers(HttpMethod.GET, "/client/test")
+                .antMatchers(HttpMethod.GET, "/servicea/test")
                 .hasAuthority("WRIGHT_READ");
     }
 

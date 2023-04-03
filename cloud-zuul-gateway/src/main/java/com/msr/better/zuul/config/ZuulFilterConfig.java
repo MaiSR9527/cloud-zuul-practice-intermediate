@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  * @site https://www.maishuren.top
  * @since 2021-05-16 16:15
  **/
-@Configuration
+// @Configuration
 public class ZuulFilterConfig {
 
     @Bean

@@ -1,7 +1,7 @@
 server:
   port: 8080
   servlet:
-    context-path: servicea
+    context-path: /servicea
 spring:
   application:
     name: service-a
