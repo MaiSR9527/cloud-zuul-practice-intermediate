@@ -14,6 +14,19 @@ zuul:
     service-a:
       path: /servicea/**
       serviceId: service-a
+  ratelimit:
+    key-prefix: zuul-rate
+    enabled: true
+    repository: BUCKET4J_JCACHE
+    behind-proxy: true
+    default-policy:
+      limit: 2
+      quota: 1
+      refresh-interval: 3
+      type:
+        - user
+        - origin
+        - uri
 security:
   oauth2:
     client:
